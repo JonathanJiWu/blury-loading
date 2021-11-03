@@ -1,6 +1,10 @@
+/* nice font found on google font */
 @import url("https://fonts.googleapis.com/css2?family=M+PLUS+1p&display=swap");
 
+/* box-sizing: how the total width and height of an element is calculated */
 * {
+  /* border-box tells the browser to account for any border and padding in the values 
+  you specify for an element's width and height.  */
   box-sizing: border-box;
 }
 
@@ -14,7 +18,7 @@ body {
   margin: 0;
 }
 
-.bg {
+.background {
   background: url('https://images.pexels.com/photos/5967953/pexels-photo-5967953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     no-repeat center center/cover;
   position: absolute;
@@ -28,5 +32,5 @@ body {
 
 .loading-text {
   font-size: 50px;
-  color: rgb(235, 219, 219);
+  color: rgb(245, 209, 209);
 }
