@@ -9,23 +9,33 @@
 }
 
 body {
-  font-family: 'Ubuntu', sans-serif;
+  /* assign imported font */
+  font-family: 'M PLUS 1p', sans-serif;
+  /* defines the body as a flex container, enables a flex context for all the direct children */
   display: flex;
+  /* align across the flex axis line */
   align-items: center;
+  /* center along the flex direction */
   justify-content: center;
   height: 100vh;
+  /* anything overflow is clipped and invisible */
   overflow: hidden;
+  /* no margin */
   margin: 0;
 }
 
 .background {
+  /* background property */
   background: url('https://images.pexels.com/photos/5967953/pexels-photo-5967953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')
     no-repeat center center/cover;
+    /* remove the element from the document flow, and create no space for the page layout */
   position: absolute;
+  /* so the blurry effect won't have a thick border */
   top: -30px;
   left: -30px;
   width: calc(100vw + 60px);
   height: calc(100vh + 60px);
+  /* so it will be behind the percentage text */
   z-index: -1;
   filter: blur(0px);
 }
