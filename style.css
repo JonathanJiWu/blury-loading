@@ -37,7 +37,7 @@ body {
   height: calc(100vh + 60px);
   /* so it will be behind the percentage text */
   z-index: -1;
-  filter: blur(0px);
+  /* filter: blur(0px); */
 }
 
 .loading-text {
